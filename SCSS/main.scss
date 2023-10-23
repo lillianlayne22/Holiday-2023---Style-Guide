@@ -186,8 +186,8 @@
     gap: 1vw;
     margin-top: $spacing-large;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    
 
     @media screen and (max-width: 992px) {
         display: flex;
@@ -217,9 +217,12 @@
 }
 
 .hiw-img {
+    width: 100%;
+    background-size: 100%;
     @media screen and (max-width: 922px) {
         width: 30%;
         margin-right: 10%;
+        aspect-ratio: 1/1;
     }
 }
 

@@ -66,6 +66,7 @@ html, body {
         @extend .copy;
         font-size: 20px;
         line-height: 22px;
+        letter-spacing: .04em;
 
         @media screen and (max-width: 992px) {
             font-size: 20px;
@@ -76,11 +77,13 @@ html, body {
         @extend .copy;
         font-size: 18px;
         line-height: 20px;
+        letter-spacing: .04em;
     }
 
     &-small {
         @extend .copy;
         font-size: 16px;
+        letter-spacing: .04em;
 
     }
 
@@ -92,6 +95,7 @@ html, body {
     font-family: orpheuspro, serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: .03em;
 
     &-x-large {
         @extend .font;
