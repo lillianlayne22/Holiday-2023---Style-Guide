@@ -30,7 +30,7 @@ html body, body body {
 }
 
 .font, .font-small, .font-medium, .font-large, .font-x-large {
-  font-family: "orpheuspro", serif;
+  font-family: orpheuspro, serif;
   font-weight: 400;
   font-style: normal;
 }

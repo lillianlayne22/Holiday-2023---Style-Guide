@@ -9,6 +9,7 @@ $global-font-secondary: 'brandon-grotesque', sans-serif;
 
 
 
+
 $global-color-mauve: rgba(185, 96, 119, 1);
 $glbal-color-green: rgba(148, 191, 169, 1);
 $global-color-black: rgba(18, 18, 20, 1);
@@ -88,7 +89,7 @@ html, body {
 
 // typography - headings 
 .font {
-    font-family: $global-font-primary;
+    font-family: orpheuspro, serif;
     font-weight: 400;
     font-style: normal;
 
