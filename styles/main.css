@@ -473,6 +473,7 @@ html body, body body {
   .hiw-card .copy-medium {
     margin-bottom: 32px;
     width: 100%;
+    text-align: left;
   }
 }
 
