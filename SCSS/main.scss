@@ -122,6 +122,10 @@
             align-items: baseline;
             margin-bottom: $spacing-small;
         }
+        
+        .card-description {
+            color: $global-font-color-copy;
+        }
 
         &-pricing {
             display: flex;
@@ -201,6 +205,7 @@
     .copy-medium {
         width: 80%;
         margin-bottom: $spacing-medium;
+        text-align: center;
         @media screen and (max-width: 922px) {
             margin-bottom: $spacing-large;
             width: 100%;

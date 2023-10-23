@@ -390,6 +390,9 @@ html body, body body {
   align-items: baseline;
   margin-bottom: 8px;
 }
+.shop-card .card-description {
+  color: rgb(62, 62, 62);
+}
 .shop-card-pricing {
   display: flex;
   gap: 0.25vw;
@@ -459,6 +462,7 @@ html body, body body {
 .hiw-card .copy-medium {
   width: 80%;
   margin-bottom: 16px;
+  text-align: center;
 }
 @media screen and (max-width: 922px) {
   .hiw-card .copy-medium {
