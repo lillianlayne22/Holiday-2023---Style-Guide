@@ -9,7 +9,7 @@ html body, body body {
 
 .copy, .copy-small, .copy-medium, .copy-large {
   font-family: "brandon-grotesque", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
 }
 .copy-large {
@@ -211,16 +211,16 @@ html body, body body {
 }
 
 .fixed-top {
-  background: #AE7008;
+  background: #9FA8B6;
 }
 
 .promo {
   height: 48px;
-  background-color: #AE7008;
+  background-color: #9FA8B6;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: rgb(62, 62, 62);
 }
 @media screen and (max-width: 922px) {
   .promo {
@@ -231,7 +231,7 @@ html body, body body {
 .promo-mobile {
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(62, 62, 62);
   width: 100%;
   display: flex;
   flex-direction: column;
