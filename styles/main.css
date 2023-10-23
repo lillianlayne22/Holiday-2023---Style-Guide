@@ -388,6 +388,7 @@ html body, body body {
   text-transform: capitalize;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 8px;
 }
 .shop-card-pricing {
   display: flex;
