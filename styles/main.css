@@ -421,93 +421,41 @@ html body, body body {
 }
 
 .hiw {
+  background-color: #FFF9E7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hiw .shop-cta {
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+.hiw .font, .hiw .font-x-large, .hiw .font-large, .hiw .font-medium, .hiw .font-small {
+  text-transform: capitalize;
+}
+.hiw .font-large {
   padding-top: 75px;
-  padding-bottom: 75px;
-  background: #FFF9E7;
-  color: rgb(18, 18, 20);
+}
+.hiw-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.hiw-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.hiw-title {
-  margin-bottom: 32px;
+.hiw .copy, .hiw .copy-large, .hiw .copy-medium, .hiw .copy-small {
+  margin-top: 8px;
+  text-wrap: balanced;
 }
-.hiw-card {
-  color: rgb(62, 62, 62);
-}
-.hiw-card-title {
-  color: rgb(18, 18, 20);
-}
-
-.hiw-card-wrapper {
-  display: flex;
-  gap: 1vw;
-  margin-top: 32px;
-  width: 100%;
-  align-items: flex-start;
-}
-@media screen and (max-width: 992px) {
-  .hiw-card-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.hiw-card {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-@media screen and (max-width: 922px) {
-  .hiw-card {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.hiw-card .copy-medium {
-  width: 80%;
-  margin-bottom: 16px;
-  text-align: center;
-}
-@media screen and (max-width: 922px) {
-  .hiw-card .copy-medium {
-    margin-bottom: 32px;
-    width: 100%;
-    text-align: left;
-  }
-}
-
 .hiw-img {
   width: 100%;
-  background-size: 100%;
-}
-@media screen and (max-width: 922px) {
-  .hiw-img {
-    width: 30%;
-    margin-right: 10%;
-    aspect-ratio: 1/1;
-  }
-}
-
-.hiw-cta {
-  margin-top: 60px;
-}
-
-.hiw-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (max-width: 922px) {
-  .hiw-content {
-    text-align: left;
-    align-items: flex-start;
-  }
-}
-
-.hiw-card-title {
-  margin-top: 16px;
   margin-bottom: 16px;
+  margin-top: 32px;
 }
 
 .shipping-deadlines {
