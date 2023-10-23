@@ -1,0 +1,409 @@
+@import 'global';
+@import 'containers';
+
+
+.hero {
+    display: flex;
+    margin-top: 98px;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+
+    &-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: $holiday-color-green;
+        color: white;
+
+        .font-x-large {
+            padding: .75rem;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 4vh;
+        }
+    }
+
+    &-right {
+        flex: 1;
+
+        &-image {
+            width: 100%;
+        }
+    }
+}
+
+.hero-cta {
+    display: flex;
+    width: 300px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    background: $holiday-color-red;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: .12em;
+    @extend .heading;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: $spacing-large;
+    @media screen and (max-width: 992px) {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+}
+
+.reviews {
+    background: url('../assets/reviews.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+
+    &-quote {
+        width: 40vw;
+        ;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        text-align: center;
+        margin-left: 5%;
+
+    }
+
+    &-attribute {
+        display: flex;
+        gap: 10px;
+        margin-top: $spacing-medium;
+    }
+}
+
+
+.holiday-page {
+    background-image: url('../assets/holiday_photo.png');
+    height: 250px;
+    color: white;
+    padding: 5%;
+
+    .copy-medium {
+        padding-left: 10%;
+        padding-right: 10%;
+        @media screen and (max-width: 992px) {
+            width: 80%;
+        }
+    }
+
+}
+
+.shop {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    &-title {
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &-card {
+        &-title {
+            display: flex;
+            width: 100%;
+            text-transform: capitalize;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        &-pricing {
+            display: flex;
+            gap: .25vw;
+            align-items: baseline;
+
+            .discount {
+                color: $holiday-color-red;
+                font-weight: 400;
+            }
+
+            .regular {
+                text-decoration-line: line-through;
+                text-decoration-thickness: .65px;
+                text-decoration-style: solid;
+                font-size: smaller;
+
+            }
+        }
+    }
+
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.hiw {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: $holiday-color-gold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        margin-bottom: $spacing-large;
+    }
+
+    &-card {
+        color: white;
+
+        &-title {
+            color: white;
+        }
+    }
+}
+
+
+
+.hiw-card-wrapper {
+    display: flex;
+    gap: 1vw;
+    margin-top: $spacing-large;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hiw-card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: 922px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copy-medium {
+        width: 80%;
+        margin-bottom: $spacing-medium;
+        @media screen and (max-width: 922px) {
+            margin-bottom: $spacing-large;
+            width: 100%;
+        }
+    }
+
+}
+
+.hiw-img {
+    @media screen and (max-width: 922px) {
+        width: 30%;
+        margin-right: 10%;
+    }
+}
+
+.hiw-cta {
+    margin-top: 60px;
+}
+
+.hiw-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 922px) {
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+
+.hiw-card-title {
+    margin-top: $spacing-medium;
+    margin-bottom: $spacing-medium;
+ 
+}
+
+.shipping-deadlines {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: $global-font-color-copy;
+        
+    }
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    &-copy {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-small;
+        height: inherit;
+        justify-content: center;
+        width: 35%;
+
+        .font-large {
+            text-transform: capitalize;
+
+            @media screen and (max-width: 992px) {
+                width: 70%;
+
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            text-align: center;
+            width: 80%;
+            align-items: center;
+            margin-bottom: $spacing-large;
+
+        }
+    }
+
+    &-images {
+        display: flex;
+        gap: $spacing-medium;
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            transform: scale(.75);
+
+        }
+    }
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    &-title {
+        width: 100%;
+        margin-bottom: $spacing-small;
+    }
+
+    &-card {
+        text-align: center;
+    }
+
+}
+
+.social {
+    background-color: $holiday-color-green;
+    color: white;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+
+&-mobile {
+    text-transform: capitalize;
+    text-align: center;
+    @media screen and (min-width: 992px) {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+}
+
+    &-title {
+        width: 30%;
+        text-transform: capitalize;
+        @media screen and (max-width: 992px) {
+            visibility: hidden;
+            height: 0;
+        }
+
+    }
+
+    &-attributes {
+        display: flex;
+        gap: 5%;
+        width: 70%;
+        align-items: second baseline;
+        text-transform: capitalize;
+        height: inherit;
+
+        @media screen and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            gap: $spacing-large;
+            align-items: center;
+        }
+
+
+        .attribute {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+            gap: $spacing-medium;
+        }
+    }
+}
+
+.attribute-stars {
+    width: 50%;
+    @media screen and (max-width: 992px) {
+       width: 50%;
+    }
+}
+
+.line {
+    height: 100px;
+    border-left: 1px solid #fff;
+    @media screen and (max-width: 992px) {
+        border-bottom: .5px solid #fff;
+        height: 0;
+        width: 20%;
+     }
+}

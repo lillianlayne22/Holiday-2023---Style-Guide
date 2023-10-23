@@ -1,0 +1,155 @@
+@import url("https://use.typekit.net/wnb0uei.css");
+
+
+
+$global-font-size: 16px;
+$global-size-base: 16px;
+$global-font-primary: 'orpheuspro', serif;
+$global-font-secondary: 'brandon-grotesque', sans-serif;
+
+
+
+$global-color-mauve: rgba(185, 96, 119, 1);
+$glbal-color-green: rgba(148, 191, 169, 1);
+$global-color-black: rgba(18, 18, 20, 1);
+$global-color-red: rgba(193, 60, 67, 1);
+
+
+
+$global-font-color-copy: rgba(62, 62, 62, 1);
+$global-font-color-headings: rgba(18, 18, 20, 1);
+$global-font-color-flourish: rgba(197, 197, 197, 1);
+
+// holiday colors 
+$holiday-color-green: #24372C;
+$holiday-color-red: #D23738;
+$holiday-color-pink: #EA5E57;
+$holiday-color-cream: #FFF9E7;
+$holiday-color-gold: #AE7008;
+
+
+
+$color-grey-xx-light: rgba(234, 234, 234, 1);
+$color-white-alt: rgba(243, 243, 243, 1);
+$color-grey-x-light: rgba(243, 243, 243, 1);
+$color-grey-light: rgba(197, 197, 197, 1);
+$color-grey-med: rgba(167, 167, 167, 1);
+$color-grey: rgba(101, 101, 101, 1);
+$color-grey-dark: rgba(62, 62, 62, 1);
+$color-grey-x-dark: rgba(18, 18, 20, 1);
+
+// spacing 
+$spacing-large: 32px;
+$spacing-medium: 16px;
+$spacing-small: 8px;
+$spacing-xsmall: 4px; 
+
+html, body {
+    min-height: 100vh;
+
+    body {
+        font-family: $global-font-secondary;
+        font-size: $global-size-base;
+    }
+}
+
+
+
+// typography - body copy
+.copy {
+    font-family: $global-font-secondary;
+    font-weight: 300;
+    font-style: normal;
+
+    &-large {
+        @extend .copy;
+        font-size: 20px;
+        line-height: 22px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &-medium {
+        @extend .copy;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    &-small {
+        @extend .copy;
+        font-size: 16px;
+
+    }
+
+}
+
+
+// typography - headings 
+.font {
+    font-family: $global-font-primary;
+    font-weight: 400;
+    font-style: normal;
+
+    &-x-large {
+        @extend .font;
+        font-size: 70px;
+        line-height: 76px;
+        
+        @media screen and (max-width: 992px) {
+            font-size: 64px;
+            line-height: 72px;
+        }
+    }
+
+    &-large {
+        @extend .font;
+        font-size: 36px;
+        line-height: 38px;
+    
+
+        @media screen and (max-width: 992px) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+    }
+
+    &-medium {
+        @extend .font;
+        font-size: 28px;
+        line-height: 30px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    &-small {
+        @extend .font;
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+// typography - flourish
+.heading {
+    font-family: $global-font-secondary;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+
+        &-large {
+            @extend .heading;
+            font-size: .9rem;
+        }
+
+        &-small {
+            @extend .heading;
+            font-size: .75rem;
+        }
+}
+
