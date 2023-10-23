@@ -423,8 +423,8 @@ html body, body body {
 .hiw {
   padding-top: 75px;
   padding-bottom: 75px;
-  background: #AE7008;
-  color: white;
+  background: #FFF9E7;
+  color: rgb(18, 18, 20);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,10 +433,10 @@ html body, body body {
   margin-bottom: 32px;
 }
 .hiw-card {
-  color: white;
+  color: rgb(62, 62, 62);
 }
 .hiw-card-title {
-  color: white;
+  color: rgb(18, 18, 20);
 }
 
 .hiw-card-wrapper {
