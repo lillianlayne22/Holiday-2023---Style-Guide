@@ -346,6 +346,11 @@ html body, body body {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 992px) {
+  .reviews {
+    background-position: right;
+  }
+}
 .reviews-quote {
   width: 40vw;
 }

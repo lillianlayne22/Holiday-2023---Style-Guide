@@ -56,105 +56,90 @@ html, body {
 
 
 
-// typography - body copy
+/.font {
+    font-family: 'orpheuspro', serif;
+    font-weight: 400;
+    font-style: normal;
+
+    // display for hero only, size should be customizable in shopify template
+    &-display {
+        font-size: 56px;
+       
+    }
+
+    &-large {
+        font-size: 32px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 48px;
+        }
+    }
+
+    &-medium {
+        font-size: 26px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 36px;
+        }
+    }
+
+    &-small {
+        font-size: 22px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 28px;
+        }
+    }
+}
+
 .copy {
-    font-family: $global-font-secondary;
-    font-weight: 100;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 300;
     font-style: normal;
 
     &-large {
-        @extend .copy;
-        font-size: 20px;
-        line-height: 22px;
-        letter-spacing: .04em;
-
-        @media screen and (max-width: 992px) {
+        font-size: 18px;
+        @media screen and (max-width: $screen-lg-max) {
             font-size: 20px;
         }
     }
 
     &-medium {
-        @extend .copy;
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: .04em;
+        font-size: 16px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 18px;
+        }
     }
 
     &-small {
-        @extend .copy;
         font-size: 16px;
-        letter-spacing: .04em;
-
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 16px;
+        }
     }
-
 }
 
-
-// typography - headings 
-.font {
-    font-family: orpheuspro, serif;
-    font-weight: 400;
+.heading {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
     font-style: normal;
-    letter-spacing: .03em;
-
-    &-x-large {
-        @extend .font;
-        font-size: 70px;
-        line-height: 76px;
-        
-        @media screen and (max-width: 992px) {
-            font-size: 64px;
-            line-height: 72px;
-        }
-    }
+    text-transform: capitalize;
 
     &-large {
-        @extend .font;
-        font-size: 36px;
-        line-height: 38px;
-    
-
-        @media screen and (max-width: 992px) {
-            font-size: 32px;
-            line-height: 36px;
+        font-size: 18px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 20px;
         }
-
     }
 
     &-medium {
-        @extend .font;
-        font-size: 28px;
-        line-height: 30px;
-
-        @media screen and (max-width: 992px) {
-            font-size: 22px;
-            line-height: 26px;
+        font-size: 16px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 18px;
         }
     }
 
     &-small {
-        @extend .font;
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 16px;
+        @media screen and (max-width: $screen-lg-max) {
+            font-size: 16px;
+        }
     }
 }
-
-// typography - flourish
-.heading {
-    font-family: $global-font-secondary;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-
-        &-large {
-            @extend .heading;
-            font-size: .9rem;
-        }
-
-        &-small {
-            @extend .heading;
-            font-size: .75rem;
-        }
-}
-

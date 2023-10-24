@@ -64,7 +64,9 @@
     background: url('../assets/reviews.jpg');
     height: 300px;
     background-size: cover;
-    background-position: center;
+    background-position: center; @media screen and (max-width: 992px) {
+        background-position: right;
+    }
 
     &-quote {
         width: 40vw;
